@@ -1,6 +1,8 @@
 # computus4j
 Java library to figure out when Easter is.
 
+[![Build Status](https://travis-ci.org/Aldaviva/computus4j.svg?branch=master)](https://travis-ci.org/Aldaviva/computus4j)
+
 ## Components
 There are several ways to represent a date in Java, and this library provides several modules so you can choose the one you want.
 - **computus4j-calendar:** uses the JDK1.1 [`Calendar`](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html) class (highly compatible, most annoying API)

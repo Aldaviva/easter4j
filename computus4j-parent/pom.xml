@@ -4,10 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Computus4j</name>
     <groupId>com.aldaviva.computus4j</groupId>
     <artifactId>computus4j-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <description>Figure out when Easter is for a given year.</description>
+    <url>https://github.com/Aldaviva/computus4j</url>
+    <inceptionYear>2016</inceptionYear>
 
     <modules>
         <module>../computus4j-test</module>
@@ -20,6 +25,39 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <ciManagement>
+        <system>Travis</system>
+        <url>https://travis-ci.org/Aldaviva/computus4j</url>
+    </ciManagement>
+
+    <scm>
+        <url>https://github.com/Aldaviva/computus4j</url>
+        <connection>scm:git:git://github.com/Aldaviva/computus4j.git</connection>
+        <developerConnection>scm:git:git@github.com:Aldaviva/computus4j.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <url>https://github.com/Aldaviva/computus4j/issues</url>
+        <system>GitHub</system>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <name>Ben Hutchison</name>
+            <url>https://aldaviva.com</url>
+            <email>ben@aldaviva.com</email>
+            <timezone>-8</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <dependencyManagement>
         <dependencies>
