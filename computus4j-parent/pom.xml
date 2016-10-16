@@ -34,7 +34,7 @@
     <scm>
         <url>https://github.com/Aldaviva/computus4j</url>
         <connection>scm:git:git://github.com/Aldaviva/computus4j.git</connection>
-        <developerConnection>scm:git:git@github.com:Aldaviva/computus4j.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com:Aldaviva/computus4j.git</developerConnection>
     </scm>
 
     <issueManagement>
@@ -53,7 +53,7 @@
 
     <licenses>
         <license>
-            <name>Apache 2</name>
+            <name>The Apache License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
@@ -92,6 +92,34 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
