@@ -38,7 +38,7 @@ Add a dependency to your project's `pom.xml`:
 ```java
 new Computus().getEaster(2016);
 ```
-Specific types for each module:
+Fully-qualified types for each module:
 ### JDK1.1 `Calendar`
 ```java
 java.util.Calendar easter = new com.aldaviva.computus4j.calendar.Computus().getEaster(2016);

@@ -40,7 +40,6 @@ public class Computus extends AbstractComputus<Calendar> {
         final int dayOfMarch = computusAlgorithm.getEaster(year);
         final Calendar easter = new GregorianCalendar(year, Calendar.MARCH, 1);
         easter.add(Calendar.DAY_OF_YEAR, dayOfMarch - 1);
-        assert easter.get(Calendar.DAY_OF_MONTH) == 27;
         return easter;
     }
 }
