@@ -41,12 +41,12 @@ new Computus().getEaster(2016);
 Specific types for each module:
 ### JDK1.1 `Calendar`
 ```java
-java.util.Calendar easter = new new com.aldaviva.computus4j.calendar.Computus().getEaster(2016);
+java.util.Calendar easter = new com.aldaviva.computus4j.calendar.Computus().getEaster(2016);
 ```
 
 ### Joda-Time
 ```java
-org.joda.time.LocalDate easter = new new com.aldaviva.computus4j.jodatime.Computus().getEaster(2016);
+org.joda.time.LocalDate easter = new com.aldaviva.computus4j.jodatime.Computus().getEaster(2016);
 ```
 
 ### JDK8 `LocalDate`
