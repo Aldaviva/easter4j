@@ -3,13 +3,18 @@ Java library to figure out when Easter is.
 
 [![Build Status](https://travis-ci.org/Aldaviva/computus4j.svg?branch=master)](https://travis-ci.org/Aldaviva/computus4j)
 
+## Algorithm
+Thanks to history, religion, politics, and astronomy, figuring out the date of Easter is a preposterously complicated procedure called [Computus](https://en.wikipedia.org/wiki/Computus).
+
+There are [many implementations](https://web.archive.org/web/20150616180400/http://www.merlyn.demon.co.uk/estrdate.htm#SAW) of Computus algorithms. This library uses [Ian Taylor's *Computus 1* algorithm](http://chilliant.blogspot.com/2010/12/computus-1.html) because it's fast.
+
 ## Components
 There are several ways to represent a date in Java, and this library provides several modules so you can choose the one you want.
 - **computus4j-calendar:** uses the JDK1.1 [`Calendar`](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html) class (highly compatible, most annoying API)
 - **computus4j-jodatime:** uses the [Joda-Time](http://www.joda.org/joda-time/) library (extra transitive dependency, requires Java 5, great API)
 - **computus4j-jdk8:** uses the JDK8 [`LocalDate`](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) class (requires Java 8, great API)
 
-Pick the one you want and declare it as a dependency.
+Pick one and declare it as a dependency.
 
 ## Building
 Maven 3 is required to compile this project.
