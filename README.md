@@ -1,7 +1,7 @@
-# computus4j
+# easter4j
 Java library to figure out when Easter is.
 
-[![Build Status](https://travis-ci.org/Aldaviva/computus4j.svg?branch=master)](https://travis-ci.org/Aldaviva/computus4j)
+[![Build Status](https://travis-ci.org/Aldaviva/easter4j.svg?branch=master)](https://travis-ci.org/Aldaviva/easter4j)
 
 ## Algorithm
 Thanks to history, religion, politics, and astronomy, figuring out the date of Easter is a preposterously complicated procedure called [Computus](https://en.wikipedia.org/wiki/Computus).
@@ -10,17 +10,17 @@ There are [many implementations](https://web.archive.org/web/20150616180400/http
 
 ## Components
 There are several ways to represent a date in Java, and this library provides several modules so you can choose the one you want.
-- **computus4j-calendar:** uses the JDK1.1 [`Calendar`](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html) class (highly compatible, most annoying API)
-- **computus4j-jodatime:** uses the [Joda-Time](http://www.joda.org/joda-time/) library (extra transitive dependency, requires Java 5, great API)
-- **computus4j-jdk8:** uses the JDK8 [`LocalDate`](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) class (requires Java 8, great API)
+- **easter4j-calendar:** uses the JDK1.1 [`Calendar`](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html) class (highly compatible, most annoying API)
+- **easter4j-jodatime:** uses the [Joda-Time](http://www.joda.org/joda-time/) library (extra transitive dependency, requires Java 5, great API)
+- **easter4j-jdk8:** uses the JDK8 [`LocalDate`](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) class (requires Java &ge; 8, great API)
 
 Pick one and declare it as a dependency.
 
 ## Building
 Maven 3 is required to compile this project.
 
-    $ git clone https://github.com/Aldaviva/computus4j.git
-    $ cd computus4j/computus4j-parent
+    $ git clone https://github.com/Aldaviva/easter4j.git
+    $ cd easter4j/easter4j-parent
     $ mvn install
 
 ## Installing
@@ -32,9 +32,9 @@ Add a dependency to your project's `pom.xml`:
         <dependency>
             <groupId>com.aldaviva.computus</groupId>
             <!-- Pick the artifact you want, see Components above -->
-            <artifactId>computus4j-calendar</artifactId>
-            <!-- <artifactId>computus4j-jodatime</artifactId> --> 
-            <!-- <artifactId>computus4j-jdk8</artifactId> -->
+            <artifactId>easter4j-calendar</artifactId>
+            <!-- <artifactId>easter4j-jodatime</artifactId> --> 
+            <!-- <artifactId>easter4j-jdk8</artifactId> -->
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
@@ -43,20 +43,20 @@ Add a dependency to your project's `pom.xml`:
 
 ## Usage
 ```java
-new Computus().getEaster(2016);
+Easter4J.getEaster(2016);
 ```
 Fully-qualified types for each module:
-### JDK1.1 `Calendar`
+##### JDK1.1 `Calendar`
 ```java
-java.util.Calendar easter = new com.aldaviva.computus4j.calendar.Computus().getEaster(2016);
+java.util.Calendar easter = com.aldaviva.easter4j.Easter4J.getEaster(2016);
 ```
 
-### Joda-Time
+##### Joda-Time
 ```java
-org.joda.time.LocalDate easter = new com.aldaviva.computus4j.jodatime.Computus().getEaster(2016);
+org.joda.time.LocalDate easter = com.aldaviva.easter4j.Easter4J.getEaster(2016);
 ```
 
-### JDK8 `LocalDate`
+##### JDK8 `LocalDate`
 ```java
-java.time.LocalDate easter = new com.aldaviva.computus4j.jdk8.Computus().getEaster(2016);
+java.time.LocalDate easter = com.aldaviva.easter4j.Easter4J.getEaster(2016);
 ```
