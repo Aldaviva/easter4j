@@ -7,7 +7,7 @@
     <name>easter4j</name>
     <groupId>com.aldaviva.easter4j</groupId>
     <artifactId>easter4j-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <description>Figure out when Easter is for a given year.</description>

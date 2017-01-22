@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.aldaviva.easter4j</groupId>
         <artifactId>easter4j-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
         <relativePath>../easter4j-parent</relativePath>
     </parent>
 
