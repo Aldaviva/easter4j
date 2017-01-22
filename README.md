@@ -35,7 +35,7 @@ Add a dependency to your project's `pom.xml`:
             <artifactId>easter4j-calendar</artifactId>
             <!-- <artifactId>easter4j-jodatime</artifactId> --> 
             <!-- <artifactId>easter4j-jdk8</artifactId> -->
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 </project>
