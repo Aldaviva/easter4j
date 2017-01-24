@@ -30,7 +30,7 @@ Add a dependency to your project's `pom.xml`:
 <project>
     <dependencies>
         <dependency>
-            <groupId>com.aldaviva.computus</groupId>
+            <groupId>com.aldaviva.easter4j</groupId>
             <!-- Pick the artifact you want, see Components above -->
             <artifactId>easter4j-calendar</artifactId>
             <!-- <artifactId>easter4j-jodatime</artifactId> --> 
